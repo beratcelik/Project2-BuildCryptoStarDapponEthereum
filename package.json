@@ -1,0 +1,27 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "Specify the Truffle version and OpenZeppelin version used in the project:\r Truffle v5.2.5\r Openzeppelin 2.1.2",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^2.1.2",
+    "truffle-hdwallet-provider": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beratcelik/Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beratcelik/Project2/issues"
+  },
+  "homepage": "https://github.com/beratcelik/Project2#readme"
+}
