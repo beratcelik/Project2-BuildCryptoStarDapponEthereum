@@ -43,8 +43,9 @@ const App = {
   lookUp: async function (){
     const { tokenIdToStarInfo } = this.meta.methods;
     const id = document.getElementById("lookid").value;
-    await tokenIdToStarInfo(id).send({from: this.account});
-    App.setStatus("The info of the Star is " + this.account + ".");
+    await tokenIdToStarInfo(id).call({from: this.account});
+    const starName = await lookforStarByTokenId(id).send({from: this.account});
+    App.setStatus("The info of the Star is " + starName + ".");
     console.log(this);
   }
 
