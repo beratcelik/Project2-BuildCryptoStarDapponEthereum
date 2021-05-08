@@ -44,7 +44,8 @@ const App = {
     const { tokenIdToStarInfo } = this.meta.methods;
     const id = document.getElementById("lookid").value;
     await tokenIdToStarInfo(id).call({from: this.account});
-    const starName = await lookforStarByTokenId(id).send({from: this.account});
+    //const starName = await lookforStarByTokenId(id).send({from: this.account});
+    const starName = await lookforStarByTokenId(id).call();
     App.setStatus("The info of the Star is " + starName + ".");
     console.log(this);
   }

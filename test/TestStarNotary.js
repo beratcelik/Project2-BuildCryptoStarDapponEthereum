@@ -126,7 +126,7 @@ it('lets a user transfer a star', async() => {
     let user2 = accounts[1];
     let starName = "My test Star"
     await instance.createStar(starName, starId, {from: user1});
-    assert.equal(await instance.ownerOf(starId), user2);
+    assert.equal(await instance.ownerOf(starId), user1);
 
 });
 
